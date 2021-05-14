@@ -1,0 +1,25 @@
+<h1>Event's</h1>
+<h3>Click Event</h3>
+<button (click)="myEvent('This is Like Warning')">click here!</button><br>
+<h3>Keyup event</h3>
+<input type="text" (keyup)="myKeyup('keyup')"><br>
+<h3>Keyup with ID</h3>
+<input type="text" #box (keyup)="myKeyup1(box.value)"><br>
+<h3>Keydown</h3>
+<input type="text" #down (keydown)="myKeydown(down.value)"><br>
+<h3>Keyup.enter</h3>
+<input type="text" #enter (keyup.enter)="myKeyEnter(enter.value)">
+<h3>Keyup.space</h3>
+<input type="text" #space (keyup.space)="myKeySpace(space.value)">
+<h3>Blur</h3>
+<input type="text" #blur (blur)="keyBlur(blur.value)"><br>
+
+<h3>Mouse Over</h3>
+<h1 (mouseover)="over('mouse over')" style="background-color: hotpink; color: orangered;">
+  Mouse Over
+</h1><br>
+
+<h3>Mover Leave</h3>
+<h1 (mouseleave)="leave('mouse leave')" style="background-color: orange; color: yellowgreen;">
+  Mouse Leave
+</h1>
